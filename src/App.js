@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Mainpage from './mainpage.js';
+import Challenges from './Challenges.js';
+import Lessons from './Lessons.js';
+import Settings from './Settings.js'
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Routes,
+  Redirect,
+} from "react-router-dom";
 
+import Profile from "./Profile.js"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+      
+        <Route exact path="/Mainpage" element={<Mainpage/>}> </Route>
+        <Route exact path="/Profile" element={<Profile/>}> </Route>
+        <Route exact path="/Challenges" element={<Challenges/>}> </Route>
+        <Route exact path="/Settings" element={<Settings/>}> </Route>
+        <Route exact path="/Lessons" element={<Lessons/>}> </Route>
+        </Routes> 
+    
+      </BrowserRouter>
     </div>
   );
 }

@@ -12,7 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+trix-toolbar {
+  height: 40px;
+}
+trix-editor {
+  display: block;
+  height: calc(100vh - 3rem - 98px) !important;
+  overflow-y: scroll;
+  padding: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: .04rem;
+  line-height: 1.8rem;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
