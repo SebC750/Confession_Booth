@@ -4,6 +4,7 @@ import Mainpage from './mainpage.js';
 import Challenges from './Challenges.js';
 import Lessons from './Lessons.js';
 import Settings from './Settings.js'
+import Login from './Login.js';
 import {
   BrowserRouter,
   Switch,
@@ -18,8 +19,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-      
-        <Route exact path="/Mainpage" element={<Mainpage/>}> </Route>
+        
+        <Route exact path="/" element={<Mainpage/>}> </Route>
         <Route exact path="/Profile" element={<Profile/>}> </Route>
         <Route exact path="/Challenges" element={<Challenges/>}> </Route>
         <Route exact path="/Settings" element={<Settings/>}> </Route>

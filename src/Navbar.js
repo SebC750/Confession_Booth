@@ -1,5 +1,16 @@
 import {Link} from "react-router-dom"
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Routes,
+  Redirect,
+} from "react-router-dom";
+import React from "react";
+import {useState} from "react";
 const Navbar = () => {
+  const [login, setLogin] = useState("")
+
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" style={{color: "white", fontSize: "30px"}}>AI Code Training</a>
@@ -34,15 +45,20 @@ const Navbar = () => {
             <li> Profile </li>
           </ul>
          <div align="right">
-          <form class="form-inline my-2 my-lg-0">
-      
-           <span> Login: <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style={{padding: 10}}/></span>
+        
+          <form>
+            <label for="username" style={{color: "white"}}> Username: </label>
+            <input type="text" id="username"></input>
+            <label for="password" style={{color: "white"}}> Password: </label>
+            <input type="text" id="password" ></input>
+            <input type="submit" value="submit"></input>
             
           </form>
           
           </div> 
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-          <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> FAQ </button></div>
+          <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Sign up </button></div>
+          
           
         </div>
                   </nav>
