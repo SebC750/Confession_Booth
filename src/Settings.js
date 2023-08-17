@@ -60,7 +60,7 @@ const Settings = () => {
             </div>
                 
                 
-            <Button > <Link to="/Mainpage"> Back to main menu </Link> </Button>
+            <Button > <Link to="/Mainpage" style={{color: "white"}}> Back to main menu </Link> </Button>
          </div>
     );
 }

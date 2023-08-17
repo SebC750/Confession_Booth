@@ -21,7 +21,7 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <Link to="/Mainpage" style={{color: "white", fontSize: "20px"}}> Home </Link>
+              <Link to="/" style={{color: "white", fontSize: "20px"}}> Home </Link>
             </li>
             <br/>
             <li class="nav-item">
@@ -57,7 +57,7 @@ const Navbar = () => {
           
           </div> 
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-          <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Sign up </button></div>
+          <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <Link to="/Signup">Sign up </Link></button></div>
           
           
         </div>

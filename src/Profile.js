@@ -23,7 +23,8 @@ const Profile = () =>{
             </div>
             <div class="card">
                 <div class="card-body">
-                <img src={logo} align="left"/> 
+                <img src={logo} align="left" class="img-thumbnail"/> 
+                
                 <h1> Sebastian Chalarca</h1>
                 <p style={{padding: 10}}> Bio: My name is Sebastian! I like to code!</p>
                 <h3> Progress Report</h3>
@@ -32,10 +33,12 @@ const Profile = () =>{
                    <p> Challenges completed: 0 </p> 
                    <p>Total number of Achievements Completed: 0 </p>
                 </ul>
+                
                 </div>
+               
             </div>
             
-            <Button > <Link to="/Mainpage"> Back to main menu </Link> </Button>
+            <Button > <Link to="/Mainpage" style={{color: "white"}}> Back to main menu </Link> </Button>
         </div> 
     );
     }
