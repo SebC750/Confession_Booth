@@ -22,10 +22,14 @@ const Profile = () =>{
                 
             </div>
             <div class="card">
+            
+            <h1 align="center" class="profile_name"> <img src={logo} align="left" class="img-thumbnail"/> Sebastian Chalarca</h1>
+            </div>
+            <div class="card">
                 <div class="card-body">
-                <img src={logo} align="left" class="img-thumbnail"/> 
                 
-                <h1> Sebastian Chalarca</h1>
+                
+                
                 <p style={{padding: 10}}> Bio: My name is Sebastian! I like to code!</p>
                 <h3> Progress Report</h3>
                 <ul>

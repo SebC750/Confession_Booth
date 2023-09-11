@@ -18,8 +18,9 @@ const Challenges = () => {
             <div class="card">
                 <div class="card-body">
                 <div align="left">
+                <div class="simple_program_title">
                 <h1> Simple Programs </h1>
-                
+                </div>
                 <div class="d-flex flex-row">
   <div class="card mx-auto"><div class="card" >
   <div class="card-body">
@@ -35,8 +36,11 @@ const Challenges = () => {
             </div>
             <div class="card">
                 <div class="card-body">
-                <div align="left">
-                <h1> Find the syntax error </h1>
+                <div align="left" >
+                  <div class="syntax_error_title">
+                  <h1> Find the syntax error </h1>
+                  </div>
+             
                 <div class="d-flex flex-row">
   <div class="card mx-auto"><div class="card" >
   <div class="card-body">
@@ -54,7 +58,9 @@ const Challenges = () => {
             <div class="card">
                 <div class="card-body">
                 <div align="left">
+                  <div class="big_o_title">
                 <h1> Big O Notation </h1>
+                </div>
                 <div class="d-flex flex-row">
   <div class="card mx-auto"><div class="card" >
   <div class="card-body">

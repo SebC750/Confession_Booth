@@ -38,7 +38,29 @@ trix-editor {
 .App-link {
   color: #61dafb;
 }
-
+.syntax_error_title{
+  background-color: blue;
+  color:white;
+  padding: 20px;
+}
+.big_o_title{
+  background-color: red;
+  color:white;
+  padding: 20px;
+}
+.simple_program_title{
+  background-color: green;
+  color:white;
+  padding: 20px;
+}
+.img-thumbnail{
+  width: 300px;
+  height: 300px
+}
+.profile_name{
+  padding: 20px;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
