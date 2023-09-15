@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.trix-toolbar{
+  color: blue;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -60,6 +62,30 @@ trix-editor {
 .profile_name{
   padding: 20px;
   
+}
+.title_padding {
+  padding: 20px;
+}
+.card-img-top {
+  width: 50px;
+}
+.objects_title{
+  background-color: purple;
+  color:white;
+  padding: 20px;
+}
+.padding{
+  padding: 20px;
+}
+.uml_title{
+  background-color: blue;
+  color:white;
+  padding: 20px;
+}
+.inherit_title{
+  background-color: rgb(0, 107, 128);
+  color:white;
+  padding: 20px;
 }
 @keyframes App-logo-spin {
   from {

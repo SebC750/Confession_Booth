@@ -17,9 +17,13 @@ function Mainpage () {
     return (
         <div>
            <Navbar></Navbar>
+            <div class="title_padding">
             <h1> Welcome to the AI Code Tutor Program </h1>
+            </div>
             <p> This website allows you to learn about coding with the assistance of AI technology, which will instruct and correct your code to improve your prgramming skills. To begin, input your code onto the textbox below!</p>
+            <div  class="texteditor_props">
             <TextEditor></TextEditor>
+            </div>
             <h2 align="left"> Results </h2>
             <div class="card">
               <div class="card-body">
@@ -32,6 +36,7 @@ function Mainpage () {
      ?
     </button>
             </div>
+            
         </div>
     )
 }

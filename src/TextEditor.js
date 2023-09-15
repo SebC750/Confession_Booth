@@ -15,8 +15,8 @@ const TextEditor = () => {
 
     const [awaitingContent, updateAwaitingContent] = useState("")
     const trixEditorProps = {
-      value:"Insert text"
-
+      value:"Insert text",
+      classname:"trix"
     }
     return (
       <div>

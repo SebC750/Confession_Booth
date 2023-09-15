@@ -33,7 +33,7 @@ const Settings = () => {
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         Choose Difficulty setting
       </Dropdown.Toggle>
-
+      <p> Current setting: Easy</p>
       <Dropdown.Menu>
         <Dropdown.Item > Easy </Dropdown.Item>
         <Dropdown.Item > Medium </Dropdown.Item>
@@ -56,11 +56,12 @@ const Settings = () => {
       </Dropdown.Menu>
     </Dropdown>
     </div> 
+    <Button > <Link to="/" style={{color: "white"}}> Back to main menu </Link> </Button>
             </div>
             </div>
                 
                 
-            <Button > <Link to="/Mainpage" style={{color: "white"}}> Back to main menu </Link> </Button>
+            
          </div>
     );
 }

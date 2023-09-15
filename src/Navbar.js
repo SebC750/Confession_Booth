@@ -13,13 +13,15 @@ const Navbar = () => {
 
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="padding">
         <a class="navbar-brand" style={{color: "white", fontSize: "30px"}}>AI Code Training</a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <Link to="/" style={{color: "white", fontSize: "20px"}}> Home </Link>
             </li>
@@ -42,9 +44,12 @@ const Navbar = () => {
               <Link to="/Profile" style={{color: "white", fontSize: "20px"}}> Profile</Link>
             </li>
             <br/>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
             <li> Profile </li>
-          </ul>
-         <div align="right">
+            <li class="nav-item text-right">
         
           <form>
             <label for="username" style={{color: "white"}}> Username: </label>
@@ -55,12 +60,14 @@ const Navbar = () => {
             
           </form>
           
-          </div> 
+          </li> 
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
           <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <Link to="/Signup">Sign up </Link></button></div>
-          
-          
-        </div>
+          <br/>
+          </ul>
+         </div>
+         
+       
                   </nav>
     );
 }
