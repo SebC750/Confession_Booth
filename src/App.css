@@ -9,6 +9,17 @@
 .trix-toolbar{
   color: blue;
 }
+.navbar{
+  padding: 20px;
+}
+.profile_title{
+  padding-left: 20px;
+}
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -21,7 +32,7 @@ trix-editor {
   display: block;
   height: calc(100vh - 3rem - 98px) !important;
   overflow-y: scroll;
-  padding: 1rem;
+  padding: 200px;
   font-size: 1.3rem;
   letter-spacing: .04rem;
   line-height: 1.8rem;
@@ -60,8 +71,8 @@ trix-editor {
   height: 300px
 }
 .profile_name{
-  padding: 20px;
-  
+  padding-top: 80px;
+  padding-right:1800px;
 }
 .title_padding {
   padding: 20px;

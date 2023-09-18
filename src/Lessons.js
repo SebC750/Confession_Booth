@@ -20,8 +20,10 @@ const Lessons = () => {
     return (
          <div>
             <Navbar> </Navbar>
+            <div class="container-fluid text-sm-center p-5 bg-light">
             <h1> Lessons </h1>
             <p> These lessons will help you obtain a better understanding of programming in general </p>
+            </div>
             <div class="simple_program_title">
                       <h1> Unit 1: Basic Syntax </h1>
                       </div>

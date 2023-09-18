@@ -22,9 +22,12 @@ const TextEditor = () => {
       <div>
       <TrixEditor {...trixEditorProps} />
       <div class="card">
+        
+      </div>
+      <div class="card">
               <div class="card-body" align="left">
-              <Button className='e-btn e-tbar-btn'> Submit </Button>
-              <Button className='e-btn e-tbar-btn'> Need help? </Button>
+              <Button className='btn btn-success'> Submit </Button>
+              <Button className='btn btn-success'> Need help? </Button>
               </div>
             
             </div>

@@ -6,6 +6,7 @@ import {
   Routes,
   Redirect,
 } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown"
 import React from "react";
 import {useState} from "react";
 const Navbar = () => {
@@ -23,46 +24,64 @@ const Navbar = () => {
         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <Link to="/" style={{color: "white", fontSize: "20px"}}> Home </Link>
+              <Link to="/" style={{color: "white", fontSize: "25px", textDecoration: "none"}}> Home </Link>
             </li>
             <br/>
             <li class="nav-item">
-            <Link to="/Lessons" style={{color: "white", fontSize: "20px"}}> Lessons </Link>
+            <Link to="/Lessons" style={{color: "white", fontSize: "25px",textDecoration: "none"}}> Lessons </Link>
             </li>
             <br/>
             <li class="nav-item">
 
-            <Link to="/Challenges" style={{color: "white", fontSize: "20px"}}> Challenges </Link>
+            <Link to="/Challenges" style={{color: "white", fontSize: "25px", textDecoration: "none"}}> Challenges </Link>
               
             </li>
             <br/>
             <li class="nav-item">
-            <Link to="/Settings" style={{color: "white", fontSize: "20px"}}> Settings </Link>
+            <Link to="/Settings" style={{color: "white", fontSize: "25px", textDecoration: "none"}}> Settings </Link>
             </li>
             <br/>
             <li> 
-              <Link to="/Profile" style={{color: "white", fontSize: "20px"}}> Profile</Link>
+              <div class="profile_link">
+              <Link to="/Profile" style={{color: "white", fontSize: "25px", textDecoration: "none"}}> Profile</Link>
+              </div>
+            </li>
+            <li> 
+              <div class="dropdown">
+              <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Resources
+      </Dropdown.Toggle>
+      
+      <Dropdown.Menu>
+        <Dropdown.Item > About Us </Dropdown.Item>
+        <Dropdown.Item > FAQ </Dropdown.Item>
+        
+        
+      </Dropdown.Menu>
+                </Dropdown>
+              </div>
             </li>
             <br/>
             </ul>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li> Profile </li>
+            
             <li class="nav-item text-right">
         
           <form>
-            <label for="username" style={{color: "white"}}> Username: </label>
-            <input type="text" id="username"></input>
-            <label for="password" style={{color: "white"}}> Password: </label>
+            <label for="username" style={{color: "white", fontSize: 20, padding: 20}}> Username: </label>
+            <input type="text" id="username" ></input>
+            <label for="password" style={{color: "white", fontSize: 20, padding: 20}}> Password: </label>
             <input type="text" id="password" ></input>
-            <input type="submit" value="submit"></input>
+              <button class="btn btn-success" type="submit">Login</button>
             
           </form>
           
           </li> 
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-          <div align="right"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <Link to="/Signup">Sign up </Link></button></div>
+         
+          <div> <Link to="/Signup"><button class="btn btn-success" type="submit"> Sign up </button> </Link></div>
           <br/>
           </ul>
          </div>

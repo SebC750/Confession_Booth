@@ -13,13 +13,17 @@ import background from "./background image.jpg"
 import big from "./big_o_graph.png"
 import loop from "./Loop1.png"
 import shop from "./shop2.jpg"
-import employee from "./employee.jpg"
+import employee from "./employee.png"
+import calc from "./calculator.png"
 const Challenges = () => {
     return (
          <div>
             <Navbar> </Navbar>
+            <div class="container-fluid text-sm-center p-5 bg-light">
             <h1> Challenges </h1>
             <p> Choose a challenge to complete! </p>
+            </div>
+            
             <div class="simple_program_title">
                 <h1> Simple Programs </h1>
                 </div>
@@ -49,10 +53,10 @@ const Challenges = () => {
   </div>
 </div></div>
 <div class="card mx-auto"><div class="card" >
-  <img class="card-img-top" src={shop} alt="Card image cap"/>
+  <img class="card-img-top" src={calc} alt="Card image cap"/>
   <div class="card-body">
-    <h5 class="card-title"> Shopping Cart</h5>
-    <h6 class="card-subtitle mb-2 text-muted"> Write a shopping cart program</h6>
+    <h5 class="card-title"> Calculator</h5>
+    <h6 class="card-subtitle mb-2 text-muted"> Write a simple calculator program</h6>
     
     <a href="#" class="btn btn-primary">Start</a>
     

@@ -17,16 +17,27 @@ const Profile = () =>{
         <div>
             <Navbar></Navbar>
             <div align="left">
-                <h1 class="text-left" style={{margin: 20}}> Profile </h1>
+                <h1 class="text-left" style={{margin: 40}}> Profile </h1>
                 
                 
             </div>
-            <div class="card">
+
             
-            <h1 align="center" class="profile_name"> <img src={logo} align="left" class="img-thumbnail"/> Sebastian Chalarca</h1>
+            <div class="container-fluid">
+            <img src={logo} align="left" class="img-thumbnail"/>
+            <h1 align="center" class="profile_name">  Sebastian Chalarca</h1>
             </div>
-            <div class="card">
-                <div class="card-body">
+           
+            
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+             <div class="container-fluid">
+          
+               
                 
                 <div align="left">
                 <h3> Biography </h3>
@@ -41,9 +52,9 @@ const Profile = () =>{
                 <Button > <Link to="/" style={{color: "white"}}> Back to main menu </Link> </Button>
                 </div>
                 
-            </div>
+          
             
-           
+          
         </div> 
     );
     }
