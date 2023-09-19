@@ -24,22 +24,20 @@ const Profile = () =>{
 
             
             <div class="container-fluid">
+                <div class="card d-flex p-2">
             <img src={logo} align="left" class="img-thumbnail"/>
-            <h1 align="center" class="profile_name">  Sebastian Chalarca</h1>
+            <h1 class="profile_name">  Sebastian Chalarca</h1>
+            </div>
             </div>
            
             
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
              <div class="container-fluid">
-          
+           
                
-                
-                <div align="left">
+                <div class="card">
+                <div align="left" style={{padding: 20}}>
                 <h3> Biography </h3>
                 <p style={{padding: 10}}> My name is Sebastian! I like to code!</p>
                 <h3> Progress Report</h3>
@@ -48,10 +46,11 @@ const Profile = () =>{
                    <p> Challenges completed: 0 </p> 
                    <p>Total number of Achievements Completed: 0 </p>
                 </ul>
-                </div>
-                <Button > <Link to="/" style={{color: "white"}}> Back to main menu </Link> </Button>
+                <Button align="center"> <Link to="/" style={{color: "white"}}> Back to main menu </Link> </Button>
                 </div>
                 
+                </div>
+                </div>
           
             
           

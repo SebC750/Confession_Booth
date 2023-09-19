@@ -22,9 +22,13 @@ function Mainpage () {
             
             <p> This website allows you to learn about coding with the assistance of AI technology, which will instruct and correct your code to improve your prgramming skills. To begin, input your code onto the textbox below!</p>
             </div>
-            <div  class="container" >
+            
+           
             <TextEditor></TextEditor>
-            </div>
+           
+            
+            
+           
             
             <div  class="container">
             <h2 align="left"> Results </h2>

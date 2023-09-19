@@ -20,17 +20,34 @@ const TextEditor = () => {
     }
     return (
       <div>
-      <TrixEditor {...trixEditorProps} />
-      <div class="card">
-        
-      </div>
-      <div class="card">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+            <TrixEditor {...trixEditorProps} />
+            <div class="card">
               <div class="card-body" align="left">
               <Button className='btn btn-success'> Submit </Button>
               <Button className='btn btn-success'> Need help? </Button>
               </div>
             
             </div>
+            </div>
+            <div class="col-3" style={{width: "40%"}}>
+              <h3> AI Chatbot </h3>
+              <div class="card" style={{height:"96.80%"}}>
+                <Form>
+                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Label> Ask anything! </Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                  </Form.Group>
+                </Form>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
             </div>
     );
   

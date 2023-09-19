@@ -15,6 +15,7 @@ import loop from "./Loop1.png"
 import shop from "./shop2.jpg"
 import employee from "./employee.png"
 import calc from "./calculator.png"
+import forLoop from "./for_loop.jpg"
 const Challenges = () => {
     return (
          <div>
@@ -32,7 +33,7 @@ const Challenges = () => {
                 <div align="left">
                 
                 <div class="d-flex flex-row">
-  <div class="card mx-auto"><div class="card" >
+  <div class="card mx-auto"><div class="card" style={{height: "100%"}}>
   <img class="card-img-top" src={shop} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title"> Shopping Cart</h5>
@@ -42,7 +43,7 @@ const Challenges = () => {
     
   </div>
 </div></div>
-<div class="card mx-auto"><div class="card" >
+<div class="card mx-auto"><div class="card" style={{height: "100%"}}>
   <img class="card-img-top" src={employee} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title"> Employee Database </h5>
@@ -52,7 +53,7 @@ const Challenges = () => {
     
   </div>
 </div></div>
-<div class="card mx-auto"><div class="card" >
+<div class="card mx-auto"><div class="card" style={{height: "100%"}}>
   <img class="card-img-top" src={calc} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title"> Calculator</h5>
@@ -100,11 +101,21 @@ const Challenges = () => {
                 <div align="left">
                   
                 <div class="d-flex flex-row">
-  <div class="card mx-auto"><div class="card" >
-  <img class="card-img-top" src={big} alt="Card image cap"/>
-  <div class="card-body">
+  <div class="card mx-auto"><div class="card" style={{height: "100%"}}>
+  <img class="card-img-top" src={big} alt="Card image cap" />
+  <div class="card-body" >
     <h5 class="card-title"> Big O Notation Problem Set I</h5>
     <h6 class="card-subtitle mb-2 text-muted"> Find the Big O Notation of the program</h6>
+    
+    <a href="#" class="btn btn-primary">Start</a>
+    
+  </div>
+</div></div>
+<div class="card mx-auto"><div class="card" >
+  <img class="card-img-top" src={forLoop} alt="Card image cap"/>
+  <div class="card-body">
+    <h5 class="card-title"> Finding Big O Notation from for loops</h5>
+    <h6 class="card-subtitle mb-2 text-muted"> Find the Big O Notation of for loops by determining how long it would take for the loop.</h6>
     
     <a href="#" class="btn btn-primary">Start</a>
     
