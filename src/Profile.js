@@ -23,6 +23,7 @@ const Profile = () =>{
             </div>
 
             
+        
             <div class="container-fluid">
                 <div class="card d-flex p-2">
             <img src={logo} align="left" class="img-thumbnail"/>
@@ -32,7 +33,7 @@ const Profile = () =>{
            
             
 <br/>
-
+            
              <div class="container-fluid">
            
                
