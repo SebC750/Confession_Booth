@@ -1,33 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Link } from 'react-router-dom'
+import Navbar from "./components/Navbar"
+import Button from "./components/Button"
+import ConfessionCard from './components/ConfessionCard'
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Navbar/>
+     <div className="container mt-5">
+      <nav className="border border-top-0 border-start-0 border-end-0 d-flex justify-content-between">
+        <h2 className="d-flex align-items-center gap-2"> <i class="bi bi-journal"></i> Today's penance </h2>
+        <button className="btn btn-outline-dark d-flex align-items-center rounded-pill mb-2"> <i className="bi bi-plus fs-4"> </i>New confession </button>
+      </nav>
+          <div className="row">
+            <ConfessionCard/>
+            <ConfessionCard/>
+            <ConfessionCard/>
+          </div>
+     </div>
     </>
   )
 }
