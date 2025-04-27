@@ -12,11 +12,8 @@ const ConfessionCard = ({id, title, content}) => {
       <div className="card-body">
         <h5 className="card-title text-2xl text-yellow-500"> {title} </h5>
         <p className="text-yellow-500"> {content}</p>
-        <div className="card-actions rounded-2xl justify-between items-center">
-          <div className="flex items-center">
-            <button className="btn btn-sm bg-transparent rounded-full border-0 shadow-none no-underline underline-offset-2 hover:underline"> <i className="bi bi-hand-thumbs-up-fill text-2xl text-success"></i> </button>
-            <button className="btn btn-sm bg-transparent rounded-full border-0 shadow-none"> <i className="bi bi-hand-thumbs-down-fill text-2xl text-error"></i> </button>
-          </div>
+        <div className="card-actions rounded-2xl justify-end">
+          
           <button className="btn bg-yellow-500 text-black rounded-2xl" onClick={() => handleOpenConfession()}> <i className="bi bi-book-half"></i> Read more </button>
         </div>
       </div>
