@@ -7,7 +7,7 @@ const ConfessionBoard = () => {
     const getConfessions = async () => {
         try {
             console.log("Now executing")
-            const confessions = await fetch(`${process.env.NEXT_PUBLIC_URL}api/confessions`);
+            const confessions = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/confessions`);
             const data = await confessions.json();
             console.log(data.data)
             setConfessions(data.data)
